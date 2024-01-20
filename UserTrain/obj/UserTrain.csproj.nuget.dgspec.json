@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Api\\ApiProject\\Train nima shafie\\UserTrain\\UserTrain\\UserTrain.csproj": {}
+    "D:\\Api\\ApiProject\\Train_nima_shafie\\UserTrain\\LoginApi\\UserTrain\\UserTrain.csproj": {}
   },
   "projects": {
-    "D:\\Api\\ApiProject\\Train nima shafie\\UserTrain\\UserTrain\\UserTrain.csproj": {
+    "D:\\Api\\ApiProject\\Train_nima_shafie\\UserTrain\\LoginApi\\UserTrain\\UserTrain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Api\\ApiProject\\Train nima shafie\\UserTrain\\UserTrain\\UserTrain.csproj",
+        "projectUniqueName": "D:\\Api\\ApiProject\\Train_nima_shafie\\UserTrain\\LoginApi\\UserTrain\\UserTrain.csproj",
         "projectName": "UserTrain",
-        "projectPath": "D:\\Api\\ApiProject\\Train nima shafie\\UserTrain\\UserTrain\\UserTrain.csproj",
+        "projectPath": "D:\\Api\\ApiProject\\Train_nima_shafie\\UserTrain\\LoginApi\\UserTrain\\UserTrain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Api\\ApiProject\\Train nima shafie\\UserTrain\\UserTrain\\obj\\",
+        "outputPath": "D:\\Api\\ApiProject\\Train_nima_shafie\\UserTrain\\LoginApi\\UserTrain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,7 +41,15 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
               "version": "[6.0.25, )"
             },

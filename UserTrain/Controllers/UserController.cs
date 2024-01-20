@@ -6,12 +6,20 @@ using System.Text;
 using UserTrain.Data;
 using Microsoft.AspNetCore.Http;
 using UserTrain.Model;
+using System.Web.Http.Cors;
+using Microsoft.AspNetCore.JsonPatch;
+
+
+
 
 namespace UserTrain.Controllers
 {
-    [Route("http://www.iranbarnamenevis.ir/")]
+   // [Route("www.iranbarnamenevis.ir/")]
 
-    [ApiController]
+  /// <summary>
+  ///  [ApiController]
+  /// </summary>
+  //  [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class UserController : ControllerBase
     {
         private Context _context;
@@ -63,7 +71,7 @@ namespace UserTrain.Controllers
 
                 var tokenToReturn = new JwtSecurityTokenHandler()
                     .WriteToken(jwtSecurityToke);
-                return Ok(tokenToReturn);
+                return new JsonResult(tokenToReturn);
          
         }
     }
